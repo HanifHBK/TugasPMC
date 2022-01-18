@@ -45,5 +45,9 @@ int main(){
             b = 0;
         }
     }
+    printf("------------------------------------------------\n");
+    printf("Ember A (3 Liter) : %d\n", a);
+    printf("Ember B (5 Liter) : %d\n", b);
+    printf("------------------------------------------------\n");
     printf("Ember B sudah terisi sampai 4 Liter, permainan selesai!");
 }
