@@ -25,6 +25,12 @@ int main(){
         printf("6. Kosongkan ember B\n");
         printf("Masukkan perintah yang diinginkan : ");
         scanf("%d", &x);
+        while (x > 6 || x < 1){
+            fflush(stdin);
+            printf("Masukan harus integer di antara 1-6, mohon ulangi masukan!\n");
+            printf("Masukkan perintah yang diinginkan : ");
+            scanf("%d", &x);
+        }
         if(x == 1){
             a = 3;
         } else if(x == 2){
@@ -50,6 +56,7 @@ int main(){
         } else if(x == 6){
             b = 0;
         }
+        fflush(stdin);
     }
     printf("------------------------------------------------\n");
     printf("Ember A (3 Liter) : %d\n", a);
