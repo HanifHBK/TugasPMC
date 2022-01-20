@@ -1,3 +1,9 @@
+/*
+Nama    : Muhammad Hanif Hibatullah
+NIM     : 13220051
+Kelas   : 01
+*/
+
 #include <stdio.h>
 
 int main(){
