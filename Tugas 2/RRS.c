@@ -51,6 +51,23 @@ int main(){
                 count = 0;
             }
         }
+        if(count == kuantum){
+            printf("-------------------------\n");
+            count = 0;
+            printf("Waktu : %d ms\n", x);
+            int j;
+            for(j = 0; j < n; j++){
+                printf("Time Proses ke-%d : %d\n", j+1, time[j]);
+            }
+            printf("Proses ke-%d diantrikan kembali\n", arr[0]+1);
+            int m;
+            int temp;
+            temp = arr[0];
+            for(m = 1; m < (k-selesai); m++){
+                arr[m-1] = arr[m];
+            }
+            arr[k-selesai-1] = temp;
+        }
         if(x == b[k]){
             printf("-------------------------\n");
             printf("Waktu : %d ms\n", x);
@@ -61,23 +78,6 @@ int main(){
             }
             printf("Proses ke-%d masuk ke antrian\n", k+1);
             k+=1;
-        }
-        if(count == kuantum){
-            printf("-------------------------\n");
-            count = 0;
-            printf("Waktu : %d ms\n", x);
-            int j;
-            for(j = 0; j < n; j++){
-                printf("Time Proses ke-%d : %d\n", j+1, time[j]);
-            }
-            printf("Proses ke-%d kembali ke antrian\n", arr[0]+1);
-            int m;
-            int temp;
-            temp = arr[0];
-            for(m = 1; m < (k-selesai); m++){
-                arr[m-1] = arr[m];
-            }
-            arr[k-selesai-1] = temp;
         }
         x += 1;
         count += 1;
