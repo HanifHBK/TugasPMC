@@ -86,6 +86,6 @@ int main(){
         }
     }
     printf("-------------------------\n");
-    printf("Algoritma selesai, total waktu proses : %d ms", x-1);
-    return 0;
+    printf("Algoritma selesai, total waktu proses : %d ms\n", x-1);
+    system("pause");
 }
