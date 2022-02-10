@@ -8,7 +8,7 @@ int main(){
     struct DataKelas{
         char Nama[80];
         int NIM;
-        int Kehadiran;
+        float Kehadiran;
     } Kelas[n];
     int i;
     for(i = 0; i < n; i++){
@@ -18,7 +18,7 @@ int main(){
         printf("NIM : ");
         scanf("%d",&Kelas[i].NIM);
         printf("Kehadiran (%%) : ");
-        scanf("%d", &Kelas[i].Kehadiran);
+        scanf("%f", &Kelas[i].Kehadiran);
     }
     printf("Mahasiswa yang tidak dapat mengikuti UAS (Kehadiran < 80 %%) : \n");
     for(i = 0; i < n; i++){
