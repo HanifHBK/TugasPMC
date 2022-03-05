@@ -106,7 +106,7 @@ int main (){
     while(progress=='y'){
         // Pembacaan vertex awal dan akhir
         int idx_awal, idx_tujuan;
-        printf("\nBerikut adalah daftar tamanan yang berada di Kebun Raya Purwodadi.\n");
+        printf("\nBerikut adalah daftar kota yang berada di Kebun Raya Purwodadi.\n");
         for(int i=1;i<=n_kota;i++){
             printf("%d. %s\n",i,nama_kota[i-1]);
         }
